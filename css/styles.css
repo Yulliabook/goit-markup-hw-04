@@ -408,10 +408,7 @@ background: #404bbf;
   display: flex;
   gap: 120px;
 }
-footer .web-text {
-}
-footer .media {
-}
+
 footer .logo {
   display: inline-block;
   margin-bottom: 16px;
