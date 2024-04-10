@@ -4,6 +4,11 @@ body {
   background: #fff;
   color: #434455;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 ul {
   list-style: none;
   margin-top: 0;
@@ -67,6 +72,7 @@ img {
   text-decoration: none;
   padding: 24px 0;
   display: block;
+  border-radius: 2px;
 }
 .header-nav-list {
   display: flex;
@@ -86,16 +92,17 @@ img {
 .header-nav-link:active {
   color: #404bbf;
 }
+
 .header-nav-link ::before,
 .header-nav-link ::after {
-  border-radius: 2px;
+  background-color: #fff;
   width: 48px;
   height: 4px;
   content: "";
 }
 .header-nav-link:hover::before,
 .header-nav-link:hover::after {
-  color: #404bbf;
+  background-color: #404bbf;
 }
 background: #404bbf;
 .header-address {
@@ -396,14 +403,14 @@ background: #404bbf;
   margin-top: 0;
   margin-bottom: 0;
   padding: 100px 0;
+}
+.footer-items {
   display: flex;
-  align-items: first baseline;
+  gap: 120px;
 }
 footer .web-text {
-  display: contents;
 }
 footer .media {
-  display: block;
 }
 footer .logo {
   display: inline-block;
@@ -411,8 +418,7 @@ footer .logo {
   margin-right: 0;
   padding: 0;
 }
-
-.footer-logo {
+.footer-text .footer-logo {
   padding-bottom: 16px;
 }
 .footer-text {
@@ -429,4 +435,20 @@ footer .logo {
 }
 .logo-studio-footer {
   color: #f4f4fd;
+}
+.media p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 16px;
+}
+footer .team-icons-list {
+  top: 0;
+  left: 0;
+  width: 208px;
+  height: 40px;
+  gap: 16px;
 }
