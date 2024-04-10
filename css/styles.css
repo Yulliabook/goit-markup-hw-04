@@ -104,7 +104,6 @@ img {
 .header-nav-link:hover::after {
   background-color: #404bbf;
 }
-background: #404bbf;
 .header-address {
   font-style: normal;
 }
