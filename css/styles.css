@@ -90,6 +90,9 @@ img {
   position: relative;
   color: #404bbf;
 }
+.header-nav {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .header-nav-link:hover {
   color: #404bbf;
@@ -123,6 +126,9 @@ img {
   display: flex;
   align-items: flex-end;
   gap: 40px;
+}
+.address-item {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-item-link {
   font-weight: 400;
@@ -318,6 +324,10 @@ img {
   width: 40;
   height: 40;
 }
+.icons-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .team-icons-link {
   background-color: #4d5ae5;
   border-radius: 50%;
@@ -443,9 +453,7 @@ footer .logo {
 
   max-width: 264px;
 }
-footer .team-icons-list {
-  display: flex;
-}
+
 .logo-studio-footer {
   color: #f4f4fd;
 }
@@ -458,11 +466,19 @@ footer .team-icons-list {
   font-family: "Roboto", sans-serif;
   margin-bottom: 16px;
 }
+
+footer .team-icons-link:hover {
+  background-color: #31d0aa;
+}
 footer .team-icons-list {
-  margin: 0;
-  top: 0;
-  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
   width: 208px;
   height: 40px;
-  gap: 16px;
+}
+footer .icons-item {
+  width: 40;
+  height: 40;
 }
