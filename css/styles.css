@@ -4,12 +4,12 @@ body {
   background: #fff;
   color: #434455;
 }
-/*
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-} */
+}
 ul {
   list-style: none;
   margin-top: 0;
@@ -102,6 +102,7 @@ img {
 }
 
 .header-nav-link::after {
+  position: absolute;
   background-color: #404bbf;
   width: 100%;
   bottom: -1px;
@@ -237,16 +238,19 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  position: absolute;
+}
+.benefits-icon {
+  width: 64px;
+  height: 64px;
   border-radius: 4px;
   width: 264px;
   height: 112px;
   background: #f4f4fd;
   margin-bottom: 8px;
   border: 1px solid #8e8f99;
-}
-.benefits-icon {
-  width: 64px;
-  height: 64px;
+  padding: 24px 100px;
 }
 .team {
   background-color: #f4f4fd;
@@ -307,6 +311,8 @@ img {
   display: flex;
   justify-content: center;
   gap: 24px;
+  width: 232px;
+  height: 40px;
 }
 .icons-item {
   width: 40;
@@ -315,15 +321,19 @@ img {
 .team-icons-link {
   background-color: #4d5ae5;
   border-radius: 50%;
-  width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 12px;
 }
 .team-icons-link:hover,
 .team-icons-link:focus {
   background-color: #404bbf;
+}
+.icons-image {
+  fill: #fff;
 }
 .portfolio {
   margin-top: 0;
@@ -339,7 +349,7 @@ img {
 }
 .portfolio-item {
   width: calc((100% - 48px) / 3);
-  transform: translatey(100%);
+
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item:hover {
@@ -449,6 +459,7 @@ footer .team-icons-list {
   margin-bottom: 16px;
 }
 footer .team-icons-list {
+  margin: 0;
   top: 0;
   left: 0;
   width: 208px;
