@@ -243,12 +243,11 @@ img {
   background: #f4f4fd;
   margin-bottom: 8px;
   border: 1px solid #8e8f99;
+  border-radius: 4px;
 }
 .benefits-icon {
   width: 64px;
   height: 64px;
-  border-radius: 4px;
-  width: 264px;
 }
 .team {
   background-color: #f4f4fd;
